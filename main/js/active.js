@@ -137,6 +137,7 @@
             barColor: '#1d1d1d',
             animateOnResize: true
         });
+
         $('#bar4').barfiller({
             tooltip: true,
             duration: 1000,
@@ -144,13 +145,11 @@
             animateOnResize: true
         });
     }
-
     // :: Gallery Menu Style Active Code
     $('.portfolio-menu button.btn').on('click', function () {
         $('.portfolio-menu button.btn').removeClass('active');
         $(this).addClass('active');
     })
-
     // :: Masonary Gallery Active Code
     if ($.fn.imagesLoaded) {
         $('.sonar-portfolio').imagesLoaded(function () {
@@ -200,7 +199,7 @@
         $.scrollUp({
             scrollSpeed: 1000,
             easingType: 'easeInOutQuart',
-            scrollText: '<i class="fa fa-angle-up" aria-hidden="true"></i>'
+            scrollText: '<i class="fa feather icon-corner-left-up" aria-hidden="true"></i>'
         });
     }
 
